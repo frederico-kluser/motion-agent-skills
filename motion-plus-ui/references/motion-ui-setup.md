@@ -154,9 +154,9 @@ Se o projeto instalava por `https://api.motion.dev/registry.tgz?package=motion-p
 O endpoint antigo continua funcionando, então dá para migrar sem pressa. **Se o token já foi
 commitado alguma vez** (em `package.json`, lockfile ou URL), trate como comprometido e regenere.
 
-Fallback offline desta máquina: `$MOTION_PLUS_VAULT`
-(`/home/ondokai/Projects/motion-plus-vault/packages`, com `motion-plus-2.12.0.tgz` + `manifest.json`
-com sha512). Serve para CI sem rede — não é o caminho padrão.
+Fallback offline: se existir um vault local de tarballs (a env `$MOTION_PLUS_VAULT` aponta para ele
+nesta máquina, com `motion-plus-<versão>.tgz` + um `manifest.json` de sha512), dá para instalar de
+lá em CI sem rede. Não é o caminho padrão.
 
 ## 6. Troubleshooting
 
