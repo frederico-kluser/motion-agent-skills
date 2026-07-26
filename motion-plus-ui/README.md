@@ -26,24 +26,23 @@ Impõe uma **cascata obrigatória** antes de qualquer JSX de interface:
 
 ## Instalação
 
-O repositório **é** a skill. Aponte um symlink de cada agente para cá — editar aqui reflete em todos,
-sem deploy:
+Pelo instalador na raiz do repositório, que liga esta skill (e a irmã) em todos os agentes:
 
 ```bash
-for d in ~/.claude/skills ~/.claude-secundaria/skills ~/.agents/skills ~/.codex/skills ~/.copilot/skills; do
-  [ -d "$d" ] && ln -sfn "$PWD" "$d/motion-plus-ui"
-done
+../install.sh            # ou ./install.sh a partir da raiz
+../install.sh --setup    # + token, MCP e a skill /motion
 ```
 
-Depois, uma vez por máquina/projeto:
+Depois, uma vez por projeto:
 
 ```bash
 node scripts/ensure-setup.mjs           # configura o que falta (idempotente)
 node scripts/ensure-setup.mjs --check   # só relata
 ```
 
-**Requer Motion+**: exporte o token (`MOTION_TOKEN`, ou `MOTION_API_KEY` como nesta máquina) obtido
-em [motion.dev/dashboard/tokens](https://motion.dev/dashboard/tokens).
+**Requer Motion+** para o registry, o premium e o AI Kit. Salve o token uma vez, globalmente:
+`node scripts/ensure-setup.mjs --save-token <token>` (gere em
+[motion.dev/dashboard/tokens](https://motion.dev/dashboard/tokens)).
 
 ## Uso direto (fora do agente)
 

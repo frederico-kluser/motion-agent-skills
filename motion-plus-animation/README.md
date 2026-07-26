@@ -32,15 +32,14 @@ no repo: lá, **source de componente**; aqui, **só animação no seu próprio m
 
 ## Instalação
 
-O repositório **é** a skill. Symlink direto de cada agente — editar aqui reflete em todos, sem deploy:
+Pelo instalador na raiz do repositório, que liga esta skill (e a irmã) em todos os agentes:
 
 ```bash
-for d in ~/.claude/skills ~/.claude-secundaria/skills ~/.agents/skills ~/.codex/skills ~/.copilot/skills; do
-  [ -d "$d" ] && ln -sfn "$PWD" "$d/motion-plus-animation"
-done
+../install.sh            # ou ./install.sh a partir da raiz
+../install.sh --setup    # + token, MCP e a skill /motion
 ```
 
-Depois:
+Depois, por projeto:
 
 ```bash
 node scripts/ensure-setup.mjs --save-token <token>   # só se ainda não estiver no ambiente
