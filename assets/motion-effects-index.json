@@ -1,0 +1,1152 @@
+{
+  "source": "https://motion.dev/llms.txt",
+  "fetchedAt": "2026-07-26",
+  "note": "Índice público (~114 exemplos). A biblioteca completa do Motion+ (400+) só pelo MCP search-motion-codex.",
+  "counts": {
+    "examples": 114,
+    "families": 86,
+    "premium": 5
+  },
+  "items": [
+    {
+      "slug": "react-bobble-hover",
+      "base": "bobble-hover",
+      "title": "Bobble hover",
+      "description": "A 3x3 grid of tiles that bobble with a spring when hovered, with the bounce scaled to how fast the pointer was moving, using Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-bobble-hover",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-command-palette",
+      "base": "command-palette",
+      "title": "Command Palette",
+      "description": "A ⌘K-style command palette with spring-animated entrance, filtered search, and keyboard navigation",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-command-palette",
+      "category": "Sobreposições (modal, tabs, acordeão)",
+      "premium": false
+    },
+    {
+      "slug": "react-scroll-hide-header",
+      "base": "scroll-hide-header",
+      "title": "Scroll Direction: Hide Header",
+      "description": "A sticky header that hides when scrolling down and reappears when scrolling up. Uses useMotionValueEvent to detect scroll direction.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-scroll-hide-header",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "react-scroll-image-reveal",
+      "base": "scroll-image-reveal",
+      "title": "Scroll Image Reveal",
+      "description": "Images reveal with a clip-path curtain effect as you scroll. Uses useScroll with element targeting and useTransform for clipPath and scale.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-scroll-image-reveal",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "react-scroll-zoom-hero",
+      "base": "scroll-zoom-hero",
+      "title": "Scroll Zoom Hero",
+      "description": "An immersive hero section where the background image scales up, blurs, and fades as you scroll. Creates a dramatic entry effect.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-scroll-zoom-hero",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "react-scroll-velocity-linked-offset",
+      "base": "scroll-velocity-linked-offset",
+      "title": "Scroll velocity: 3D planes",
+      "description": "A 3D carousel with scroll velocity-linked wave effect using Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-scroll-velocity-linked-offset",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "react-ios-app-folder",
+      "base": "ios-app-folder",
+      "title": "iOS App Folder",
+      "description": "An iOS-style app folder that expands to reveal apps inside, using Motion for React's layout animations and AnimatePresence.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-ios-app-folder",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "react-todo-list",
+      "base": "todo-list",
+      "title": "To-do list",
+      "description": "A draggable to-do list with animated checkboxes and strikethrough effects using Motion for React's Reorder component.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-todo-list",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-carousel-ios-exposure-slider",
+      "base": "carousel-ios-exposure-slider",
+      "title": "Carousel: iOS exposure slider",
+      "description": "An example of creating a camera exposure slider interface with animated notches using the Motion+ Carousel component for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-carousel-ios-exposure-slider",
+      "category": "Gestos e drag",
+      "premium": true
+    },
+    {
+      "slug": "react-animate-presence-modes",
+      "base": "animate-presence-modes",
+      "title": "AnimatePresence modes",
+      "description": "An example of the three AnimatePresence modes (sync, wait, and popLayout) demonstrating how elements enter and exit the DOM with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-animate-presence-modes",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "react-cursor-floating-target",
+      "base": "cursor-floating-target",
+      "title": "Cursor: Floating target",
+      "description": "An example of creating a floating target with rotating text and hover effects using the Motion+ Cursor and usePointerPosition.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-cursor-floating-target",
+      "category": "Gestos e drag",
+      "premium": true
+    },
+    {
+      "slug": "react-card-stack",
+      "base": "card-stack",
+      "title": "Card stack",
+      "description": "An example of creating a swipeable card stack with photos in Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-card-stack",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-material-design-ripple",
+      "base": "material-design-ripple",
+      "title": "Material Design: Ripple",
+      "description": "An example of creating a press ripple with Motion, inspired by Google Material Design.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-material-design-ripple",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-material-design-ripple",
+      "base": "material-design-ripple",
+      "title": "Material Design: Ripple",
+      "description": "An example of creating a press ripple with Motion for React, inspired by Google Material Design.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-material-design-ripple",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-magnetic-filings",
+      "base": "magnetic-filings",
+      "title": "Magnetic filings",
+      "description": "An example of creating a grid of metal filings that rotate to point towards the cursor position using Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-magnetic-filings",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "react-cursor-trail-velocity",
+      "base": "cursor-trail-velocity",
+      "title": "Cursor trail velocity",
+      "description": "An example of creating a cursor trail with velocity-based inertia animations in Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-cursor-trail-velocity",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "react-cursor-trail",
+      "base": "cursor-trail",
+      "title": "Cursor trail",
+      "description": "An example of creating a cursor trail with images in Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-cursor-trail",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "react-infinite-loading",
+      "base": "infinite-loading",
+      "title": "Infinite loading",
+      "description": "An example of creating an infinite loading list with staggered animations in Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-infinite-loading",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "js-scroll-highlight",
+      "base": "scroll-highlight",
+      "title": "Scroll highlight",
+      "description": "An example of creating a scroll-triggered skill showcase with dynamic highlighting in Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-scroll-highlight",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-infinite-path-drawing",
+      "base": "loading-infinite-path-drawing",
+      "title": "Loading: Infinite path drawing",
+      "description": "An example of creating an infinite path drawing loading animation with Motion. This example uses svgEffect to animate the path. svgEffect is the next-generation Motion SVG renderer that makes it easy to create these infinitely looping drawing animations. In a future version of Motion it'll be possible to just use the animate function below without the svgEffect setup.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-infinite-path-drawing",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-apple-intelligence",
+      "base": "apple-intelligence",
+      "title": "Apple Intelligence ripple",
+      "description": "An example of the 'ripple' part of the Apple Intelligence animation using Motion for React. It uses a cloned version of the current content rather than using shaders.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-apple-intelligence",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-family-dialog",
+      "base": "family-dialog",
+      "title": "Family-style dialog",
+      "description": "Family-style dialog using Motion. It uses the HTML dialog and Motion's animateView function for View Transitions.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-family-dialog",
+      "category": "View transitions / página",
+      "premium": false
+    },
+    {
+      "slug": "react-split-text",
+      "base": "split-text",
+      "title": "Split text",
+      "description": "An example of creating a text reveal animation with split text in Motion for React",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-split-text",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "js-hold-to-confirm",
+      "base": "hold-to-confirm",
+      "title": "Hold to confirm",
+      "description": "A Motion example showing long-press interaction. The button's events update a progress motion value that drives multiple animations of other motion values.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-hold-to-confirm",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-multi-state-badge",
+      "base": "multi-state-badge",
+      "title": "Multi state badge",
+      "description": "A badge that can be in multiple states, such as processing, success, or error.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-multi-state-badge",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-notifications-stack",
+      "base": "notifications-stack",
+      "title": "Notifications stack",
+      "description": "A iOS inspired notifications stack using Motion's variants.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-notifications-stack",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "react-hold-to-confirm",
+      "base": "hold-to-confirm",
+      "title": "Hold to confirm",
+      "description": "A Motion for React example showing long-press interaction. The button's events update a progress motion value that drives multiple animations of other motion values.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-hold-to-confirm",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-characters-remaining",
+      "base": "characters-remaining",
+      "title": "Characters remaining",
+      "description": "An example of creating a character counter with spring animations in Motion",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-characters-remaining",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "react-multi-state-badge",
+      "base": "multi-state-badge",
+      "title": "Multi state badge",
+      "description": "A badge that can be in multiple states, such as processing, success, or error.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-multi-state-badge",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-circle-spinner",
+      "base": "loading-circle-spinner",
+      "title": "Loading: Circle spinner",
+      "description": "An example of creating a circle spinner loading animation with Motion for Vue.",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-circle-spinner",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-fill-text",
+      "base": "loading-fill-text",
+      "title": "Fill text",
+      "description": "An example of creating a text fill loading animation with Motion for Vue.",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-fill-text",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-jumping-dots",
+      "base": "loading-jumping-dots",
+      "title": "Loading: Jumping dots",
+      "description": "An example of creating a jumping dots loading animation with Motion for Vue.",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-jumping-dots",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-line-reveal",
+      "base": "loading-line-reveal",
+      "title": "Loading overlay",
+      "description": "An example of creating a line reveal loading animation with clipPath in Motion for Vue",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-line-reveal",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-progress-bar",
+      "base": "loading-progress-bar",
+      "title": "Loading progress bar",
+      "description": "An example of creating a progress bar loading animation with Motion for Vue.",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-progress-bar",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-ripple",
+      "base": "loading-ripple",
+      "title": "Loading ripple",
+      "description": "An example of creating a ripple loading animation with Motion for Vue.",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-ripple",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "vue-loading-three-dots-pulse",
+      "base": "loading-three-dots-pulse",
+      "title": "Loading: Pulse dots",
+      "description": "An example of creating a pulsing dots loading animation with Motion for Vue.",
+      "platform": "Vue",
+      "url": "https://motion.dev/examples/vue-loading-three-dots-pulse",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-circle-spinner",
+      "base": "loading-circle-spinner",
+      "title": "Loading: Circle spinner",
+      "description": "An example of creating a circle spinner loading animation with Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-circle-spinner",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-fill-text",
+      "base": "loading-fill-text",
+      "title": "Fill text",
+      "description": "An example of creating a text fill loading animation with Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-fill-text",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-jumping-dots",
+      "base": "loading-jumping-dots",
+      "title": "Loading: Jumping dots",
+      "description": "An example of creating a jumping dots loading animation with Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-jumping-dots",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-line-reveal",
+      "base": "loading-line-reveal",
+      "title": "Loading overlay",
+      "description": "An example of creating a line reveal loading animation with clipPath in Motion",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-line-reveal",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-progress-bar",
+      "base": "loading-progress-bar",
+      "title": "Loading progress bar",
+      "description": "An example of creating a progress bar loading animation with Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-progress-bar",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-ripple",
+      "base": "loading-ripple",
+      "title": "Loading ripple",
+      "description": "An example of creating a ripple loading animation with Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-ripple",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-loading-three-dots-pulse",
+      "base": "loading-three-dots-pulse",
+      "title": "Loading: Pulse dots",
+      "description": "An example of creating a pulsing dots loading animation with Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-loading-three-dots-pulse",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-circle-spinner",
+      "base": "loading-circle-spinner",
+      "title": "Loading: Circle spinner",
+      "description": "An example of creating a circle spinner loading animation with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-circle-spinner",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-fill-text",
+      "base": "loading-fill-text",
+      "title": "Fill text",
+      "description": "An example of creating a text fill loading animation with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-fill-text",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-jumping-dots",
+      "base": "loading-jumping-dots",
+      "title": "Loading: Jumping dots",
+      "description": "An example of creating a jumping dots loading animation with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-jumping-dots",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-line-reveal",
+      "base": "loading-line-reveal",
+      "title": "Loading overlay",
+      "description": "An example of creating a line reveal loading animation with clipPath in Motion for React",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-line-reveal",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-progress-bar",
+      "base": "loading-progress-bar",
+      "title": "Loading progress bar",
+      "description": "An example of creating a progress bar loading animation with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-progress-bar",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-ripple",
+      "base": "loading-ripple",
+      "title": "Loading ripple",
+      "description": "An example of creating a ripple loading animation with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-ripple",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "react-loading-three-dots-pulse",
+      "base": "loading-three-dots-pulse",
+      "title": "Loading: Pulse dots",
+      "description": "An example of creating a pulsing dots loading animation with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-loading-three-dots-pulse",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-staggered-grid",
+      "base": "staggered-grid",
+      "title": "Physical stagger",
+      "description": "An example of animating elements with a delay staggered by physical distance.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-staggered-grid",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "js-app-store-layout",
+      "base": "app-store-layout",
+      "title": "iOS App Store: Layout animation",
+      "description": "An example of creating a card layout inspired by the iOS App Store with Modal functionality using Motion's animateLayout for shared element animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-app-store-layout",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "js-app-store",
+      "base": "app-store",
+      "title": "iOS App Store",
+      "description": "An example of creating a card layout inspired by the iOS App Store with Modal functionality using View Transitions in Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-app-store",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "js-conic-gradient-pointer",
+      "base": "conic-gradient-pointer",
+      "title": "Conic gradient pointer",
+      "description": "An example of creating a dynamic conic gradient that follows the pointer position.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-conic-gradient-pointer",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "js-image-reveal-slider",
+      "base": "image-reveal-slider",
+      "title": "Image reveal slider",
+      "description": "An image reveal slider that uses Motion's drag functionality to create a before/after image comparison with a sliding reveal effect. It includes keyboard accessibility and smooth animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-image-reveal-slider",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-ios-slider",
+      "base": "ios-slider",
+      "title": "iOS slider",
+      "description": "An example of recreating the iOS slider using Motion for JavaScript. This example creates a brightness slider with iOS-like overscroll and springy animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-ios-slider",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-notifications-list",
+      "base": "notifications-list",
+      "title": "Notifications list",
+      "description": "An example of animating a list of animations as they're added and removed, using Motion for JavaScript's animation capabilities. It implements manual FLIP animations so that notifications animate into their new layouts.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-notifications-list",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "js-tilt-card",
+      "base": "tilt-card",
+      "title": "Tilt card",
+      "description": "A card that tilts based on pointer position using Motion's spring animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-tilt-card",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "js-typewriter",
+      "base": "typewriter",
+      "title": "Typewriter",
+      "description": "An example of a typewriter effect using Motion for JavaScript animation values.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-typewriter",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "react-tilt-card",
+      "base": "tilt-card",
+      "title": "Tilt card",
+      "description": "A card that tilts based on pointer position using Motion for React's useSpring hook.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-tilt-card",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "js-split-text-scatter",
+      "base": "split-text-scatter",
+      "title": "Split Text: Scatter",
+      "description": "Demonstrate how to use the splitText function from Motion+ to create scatter text animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-split-text-scatter",
+      "category": "Texto",
+      "premium": true
+    },
+    {
+      "slug": "js-split-text-wavy",
+      "base": "split-text-wavy",
+      "title": "Split Text: Wavy",
+      "description": "Demonstrate how to use the splitText function from Motion+ to create wavy text animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-split-text-wavy",
+      "category": "Texto",
+      "premium": true
+    },
+    {
+      "slug": "js-split-text",
+      "base": "split-text",
+      "title": "Split Text",
+      "description": "Demonstrate how to use the splitText function from Motion+ to create staggered text animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-split-text",
+      "category": "Texto",
+      "premium": true
+    },
+    {
+      "slug": "js-color-interpolation",
+      "base": "color-interpolation",
+      "title": "Color interpolation",
+      "description": "A comparison of color interpolation between Motion and the browser's native interpolation. Motion uses linear RGB color space, which avoids the dimming effect suffered by browser interpolation.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-color-interpolation",
+      "category": "Cor e gradiente",
+      "premium": false
+    },
+    {
+      "slug": "react-image-reveal-slider",
+      "base": "image-reveal-slider",
+      "title": "Image reveal slider",
+      "description": "An example of creating an interactive image comparison slider with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-image-reveal-slider",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-gestures",
+      "base": "gestures",
+      "title": "Gestures",
+      "description": "An example of using Motion's press and hover functions to animate elements as a user presses and hovers over them.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-gestures",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-accordion",
+      "base": "accordion",
+      "title": "Accordion",
+      "description": "An example of an accordion component using Motion. Animate accordion content using height: auto and accessible markup. Uses focus events and shared layout animations for keyboard accessibility.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-accordion",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "js-bounce-easing",
+      "base": "bounce-easing",
+      "title": "Bounce easing",
+      "description": "A toggle switch that demonstrates custom easing functions with both bounce and spring animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-bounce-easing",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "js-modal",
+      "base": "modal",
+      "title": "Modal dialog",
+      "description": "An example of a modal dialog using Motion and the HTML <dialog /> element. This example demonstrates smooth animations for opening and closing the modal, with a backdrop overlay and click-outside-to-close functionality.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-modal",
+      "category": "Sobreposições (modal, tabs, acordeão)",
+      "premium": false
+    },
+    {
+      "slug": "js-text-reveal",
+      "base": "text-reveal",
+      "title": "Reveal text effect",
+      "description": "An example of revealing text on hover using flexbox and Motion's layout animations.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-text-reveal",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "js-spring-follow-cursor",
+      "base": "spring-follow-cursor",
+      "title": "Spring: Follow Cursor",
+      "description": "An example of a spring animation that follows the cursor.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-spring-follow-cursor",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "js-press",
+      "base": "press",
+      "title": "Press",
+      "description": "An example of using Motion's press function to animate elements as a user presses them. press() automatically filters out right clicks and secondary touch points. Every element with a press gesture is keyboard accessible by default.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-press",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-swipe-actions",
+      "base": "swipe-actions",
+      "title": "Swipe actions",
+      "description": "iOS-style swipe actions where UI elements and animations respond dynamically to swipe progress. Actions trigger via taps or full swipes (for primary actions). A modern, space-efficient alternative to dropdown menus that keeps actions hidden behind the main item until revealed by a swipe gesture.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-swipe-actions",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "js-hover",
+      "base": "hover",
+      "title": "Hover",
+      "description": "An example of using Motion's hover function to animate elements as a user hovers over them. hover() automatically filters out polyfilled hover events from touch screens, which can normally lead to broken visual states.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-hover",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-accordion",
+      "base": "accordion",
+      "title": "Accordion",
+      "description": "An example of an accordion component using Motion for React. Animate accordion content using height: auto and accessible markup. Uses focus events and shared layout animations for keyboard accessibility.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-accordion",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "react-ios-slider",
+      "base": "ios-slider",
+      "title": "iOS slider",
+      "description": "An example of recreating the iOS slider using Motion for React. This example uses useTransform to map input to slider state, and slider state to pull, squish and squash animations. It uses React'setModal onFocus and onBlur to set up keyboard-accessible inputs, with Motion's whileFocus prop to animate a custom focus indicator.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-ios-slider",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-smooth-tabs",
+      "base": "smooth-tabs",
+      "title": "Smooth Tabs",
+      "description": "Segmented control with sliding indicator and directional content transitions",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-smooth-tabs",
+      "category": "Sobreposições (modal, tabs, acordeão)",
+      "premium": false
+    },
+    {
+      "slug": "react-tab-select",
+      "base": "tab-select",
+      "title": "Tab select",
+      "description": "An example of using making a tab select component with Motion for React's shared layout animations. Because it uses onTap and whileFocus, it's keyboard-accessible by default. Try tabbing between the options and hitting Enter.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-tab-select",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "react-app-store",
+      "base": "app-store",
+      "title": "iOS App Store",
+      "description": "An example of animating cards inspired by the iOS App Store using Motion for React's layout animations.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-app-store",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "react-follow-pointer-with-spring",
+      "base": "follow-pointer-with-spring",
+      "title": "Follow pointer with spring",
+      "description": "An example of making an element follow the pointer with a spring using Motion for React's useSpring hook.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-follow-pointer-with-spring",
+      "category": "Cursor e ponteiro",
+      "premium": false
+    },
+    {
+      "slug": "react-html-content",
+      "base": "html-content",
+      "title": "HTML content",
+      "description": "An example using Motion for React to animate HTML content by rendering a MotionValue.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-html-content",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "react-keyframes-wildcards",
+      "base": "keyframes-wildcards",
+      "title": "Keyframe wildcards",
+      "description": "An example of using Motion for React's keyframe wildcards to create interruptible keyframe animations.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-keyframes-wildcards",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "react-parallax",
+      "base": "parallax",
+      "title": "Parallax",
+      "description": "Scroll-linked parallax effect where background images move at a different speed to foreground content, creating a sense of depth.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-parallax",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "react-use-animation-frame",
+      "base": "use-animation-frame",
+      "title": "Spinning 3D cube",
+      "description": "An example of using Motion for React's useAnimationFrame hook to animate a 3D cube.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-use-animation-frame",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "react-css-spring",
+      "base": "css-spring",
+      "title": "CSS spring",
+      "description": "An example of generating a spring animation in CSS using Motion's spring function.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-css-spring",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "js-lightbox",
+      "base": "lightbox",
+      "title": "Lightbox",
+      "description": "An example and tutorial for a lightbox shared element transition, using Motion's view function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-lightbox",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "js-page-wipe",
+      "base": "page-wipe",
+      "title": "Page wipe",
+      "description": "An example of combining a full page wipe with a shared element transition using Motion's view function. The view function is built on the browser's native View Transition API.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-page-wipe",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "react-notifications-stack",
+      "base": "notifications-stack",
+      "title": "iOS Notifications stack",
+      "description": "A iOS inspired notifications stack using Motion for React's variants.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-notifications-stack",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "js-shared-view-animation",
+      "base": "shared-view-animation",
+      "title": "Shared view animation",
+      "description": "Animate shared elements between states using View Transitions API via Motion's view() function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-shared-view-animation",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "js-view-animation",
+      "base": "view-animation",
+      "title": "View animation",
+      "description": "An example of animating a layout change using the View Transitions API via Motion's simple view function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-view-animation",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "js-html-content",
+      "base": "html-content",
+      "title": "HTML content",
+      "description": "An example using Motion to animate HTML content via the Element.innerText property.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-html-content",
+      "category": "Texto",
+      "premium": false
+    },
+    {
+      "slug": "js-options",
+      "base": "options",
+      "title": "Basic animation",
+      "description": "An example of using easing and duration options to customise a scale animation in Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-options",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "js-parallax",
+      "base": "parallax",
+      "title": "Parallax",
+      "description": "An example of creating a parallax effect using Motion's scroll function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-parallax",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "js-rotate",
+      "base": "rotate",
+      "title": "Rotate",
+      "description": "An example of a rotation animation in Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-rotate",
+      "category": "3D e transformações",
+      "premium": false
+    },
+    {
+      "slug": "js-scroll-fade",
+      "base": "scroll-fade",
+      "title": "Scroll fade in/out",
+      "description": "An example of fading content in and out as you scroll using Motion's scroll function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-scroll-fade",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "js-scroll-pinning",
+      "base": "scroll-pinning",
+      "title": "Scroll pinning",
+      "description": "An example of pinning content on scroll and animating content horizontally using position: sticky and Motion's scroll function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-scroll-pinning",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "js-scroll-triggered",
+      "base": "scroll-triggered",
+      "title": "Scroll-triggered animation",
+      "description": "An example of using Motion's inView function to trigger animations when elements enter the viewport.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-scroll-triggered",
+      "category": "Scroll",
+      "premium": false
+    },
+    {
+      "slug": "js-spring",
+      "base": "spring",
+      "title": "Spring",
+      "description": "An example of a spring animation in Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-spring",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "js-stagger",
+      "base": "stagger",
+      "title": "Stagger",
+      "description": "An example of staggering animations in Motion using its stagger() function.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-stagger",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "js-svg-loading-spinner",
+      "base": "svg-loading-spinner",
+      "title": "SVG loading spinner",
+      "description": "An example of using Motion to animate an SVG loading spinner.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-svg-loading-spinner",
+      "category": "Loading e progresso",
+      "premium": false
+    },
+    {
+      "slug": "js-svg-path-morphing",
+      "base": "svg-path-morphing",
+      "title": "SVG path morphing",
+      "description": "An example of using Motion and Flubber to animate an SVG between different shapes.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-svg-path-morphing",
+      "category": "SVG e path",
+      "premium": false
+    },
+    {
+      "slug": "js-three",
+      "base": "three",
+      "title": "Three.js",
+      "description": "An example of a rotating cube using Three.js and Motion.",
+      "platform": "JS",
+      "url": "https://motion.dev/examples/js-three",
+      "category": "3D e transformações",
+      "premium": false
+    },
+    {
+      "slug": "react-exit-animation",
+      "base": "exit-animation",
+      "title": "Exit animation",
+      "description": "An example of animating an element when it's removed from the DOM using AnimatePresence in Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-exit-animation",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "react-drag",
+      "base": "drag",
+      "title": "Drag",
+      "description": "An example of making an element draggable using Motion for React's drag prop.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-drag",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-enter-animation",
+      "base": "enter-animation",
+      "title": "Enter animation",
+      "description": "An example of animating an element when it's added to the DOM using Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-enter-animation",
+      "category": "Entrada e saída (mount/unmount)",
+      "premium": false
+    },
+    {
+      "slug": "react-gestures",
+      "base": "gestures",
+      "title": "Gestures",
+      "description": "An example of using gestures to animate an element using Motion for React's simple whileTap and whileHover props.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-gestures",
+      "category": "Gestos e drag",
+      "premium": false
+    },
+    {
+      "slug": "react-keyframes",
+      "base": "keyframes",
+      "title": "Keyframes",
+      "description": "An example of animating an element using keyframes with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-keyframes",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "react-layout-animation",
+      "base": "layout-animation",
+      "title": "Layout animation",
+      "description": "An example of animating a layout change using Motion for React's simple layout prop.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-layout-animation",
+      "category": "Layout compartilhado / morph",
+      "premium": false
+    },
+    {
+      "slug": "react-motion-path",
+      "base": "motion-path",
+      "title": "Motion along a path",
+      "description": "An example of animating an element along a path using Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-motion-path",
+      "category": "SVG e path",
+      "premium": false
+    },
+    {
+      "slug": "react-path-drawing",
+      "base": "path-drawing",
+      "title": "Path drawing",
+      "description": "An example of animating a SVG path to make a path drawing effect, using Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-path-drawing",
+      "category": "SVG e path",
+      "premium": false
+    },
+    {
+      "slug": "react-path-morphing",
+      "base": "path-morphing",
+      "title": "Path morphing",
+      "description": "An example of creating smooth SVG path morphing animations with Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-path-morphing",
+      "category": "SVG e path",
+      "premium": false
+    },
+    {
+      "slug": "react-transition",
+      "base": "transition",
+      "title": "Transition options",
+      "description": "An example of setting transition options in Motion for React.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-transition",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "react-variants",
+      "base": "variants",
+      "title": "Variants",
+      "description": "An example of orchestrating animation sequences using Motion for React's variants.",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-variants",
+      "category": "Springs e easing",
+      "premium": false
+    },
+    {
+      "slug": "react-rotate",
+      "base": "rotate",
+      "title": "Rotate",
+      "description": "An example of animation the rotation of an element with Motion for React",
+      "platform": "React",
+      "url": "https://motion.dev/examples/react-rotate",
+      "category": "3D e transformações",
+      "premium": false
+    }
+  ]
+}
