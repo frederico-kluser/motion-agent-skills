@@ -1,0 +1,1246 @@
+{
+  "source": "https://api.motion.dev/ui/registry/index.json",
+  "fetchedAt": "2026-07-26",
+  "counts": {
+    "total": 64,
+    "sections": 26,
+    "components": 37,
+    "premium": 20
+  },
+  "items": [
+    {
+      "name": "ui-theme",
+      "type": "registry:component",
+      "category": null,
+      "title": "Motion UI theme",
+      "description": "Shared motion tokens (springs, durations, easings, stagger, travel) every Motion UI section consumes. Installed automatically as a dependency of any section.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/ui-theme/index.ts"
+      ]
+    },
+    {
+      "name": "motion-theme",
+      "type": "registry:file",
+      "category": null,
+      "title": "Motion theme config",
+      "description": "Project-owned motion.theme.ts starter. Install once, then customise without later Motion UI installs replacing it.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "~/motion.theme.ts"
+      ]
+    },
+    {
+      "name": "velocity-preview-theme",
+      "type": "registry:component",
+      "category": null,
+      "title": "Velocity preview theme",
+      "description": "The optional motion.dev-brand preview theme (shadcn variable values + the light/dark switcher shell) every Motion UI section's live demo wraps in. Install it to get the monochrome Velocity look; skip it to use your own shadcn theme instead.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/velocity-preview-theme/velocity-preview.tsx",
+        "components/motion-ui/velocity-preview-theme/velocity-preview-theme.css"
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:component",
+      "category": null,
+      "title": "Accordion",
+      "description": "Springy height-morph accordion panels that fold open with a blur-in on the copy.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/accordion/index.tsx"
+      ]
+    },
+    {
+      "name": "add-to-basket",
+      "type": "registry:component",
+      "category": null,
+      "title": "Add to basket",
+      "description": "A product image that arcs into the basket icon, with a recoil and ripple on arrival.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/add-to-basket/index.tsx"
+      ]
+    },
+    {
+      "name": "arrow-link",
+      "type": "registry:component",
+      "category": null,
+      "title": "Arrow link",
+      "description": "A read-more link whose trailing arrow slides forward on hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/arrow-link/index.tsx"
+      ]
+    },
+    {
+      "name": "border-beam",
+      "type": "registry:component",
+      "category": null,
+      "title": "Border beam",
+      "description": "A thin arc of light that sweeps the rounded border of any panel.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/border-beam/index.tsx"
+      ]
+    },
+    {
+      "name": "card-stack",
+      "type": "registry:component",
+      "category": null,
+      "title": "Card stack",
+      "description": "A fanned card stack navigated with carousel controls and a top-left pop between cards.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/card-stack/index.tsx"
+      ]
+    },
+    {
+      "name": "carousel-controls",
+      "type": "registry:component",
+      "category": null,
+      "title": "Carousel controls",
+      "description": "Prev and next buttons with animated position dots for any paged carousel.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/carousel-controls/index.tsx"
+      ]
+    },
+    {
+      "name": "command-palette",
+      "type": "registry:component",
+      "category": null,
+      "title": "Command palette",
+      "description": "Motion's fuzzy-filtered Cmd+K launcher choreography on Base UI's Dialog primitive, with a sliding selection highlight.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/command-palette/index.tsx"
+      ]
+    },
+    {
+      "name": "confetti",
+      "type": "registry:component",
+      "category": null,
+      "title": "Confetti",
+      "description": "A brand-coloured celebration burst that fires on any success beat.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/confetti/index.tsx"
+      ]
+    },
+    {
+      "name": "copy-button",
+      "type": "registry:component",
+      "category": null,
+      "title": "Copy button",
+      "description": "A copy-to-clipboard button that confirms with a glyph swap and a self-drawing check.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/copy-button/index.tsx"
+      ]
+    },
+    {
+      "name": "coverflow",
+      "type": "registry:component",
+      "category": null,
+      "title": "Coverflow",
+      "description": "A 3D coverflow carousel where items rotate, scale and fade as they leave centre.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/coverflow/index.tsx",
+        "components/motion-ui/carousel-controls/index.tsx"
+      ]
+    },
+    {
+      "name": "expand-card",
+      "type": "registry:component",
+      "category": null,
+      "title": "Expand card",
+      "description": "An App Store-style expand where a grid tile morphs into a centred detail panel.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/expand-card/index.tsx",
+        "components/motion-ui/overlay/index.tsx"
+      ]
+    },
+    {
+      "name": "hold-to-confirm",
+      "type": "registry:component",
+      "category": null,
+      "title": "Hold to confirm",
+      "description": "A press-and-hold button that wipes a destructive fill across the label as you confirm.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/hold-to-confirm/index.tsx"
+      ]
+    },
+    {
+      "name": "magnetic-pull",
+      "type": "registry:component",
+      "category": null,
+      "title": "Magnetic pull",
+      "description": "An element that gently chases the pointer within a magnetic field, then springs back.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/magnetic-pull/index.tsx"
+      ]
+    },
+    {
+      "name": "mask-wipe",
+      "type": "registry:component",
+      "category": null,
+      "title": "Mask wipe",
+      "description": "A directional page transition that wipes the incoming view into place through a soft animated mask. React 19 canary only.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/mask-wipe/index.tsx"
+      ]
+    },
+    {
+      "name": "multi-state-button",
+      "type": "registry:component",
+      "category": null,
+      "title": "Multi-state button",
+      "description": "A button whose width, glyph and label morph as it moves between states.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/multi-state-button/index.tsx"
+      ]
+    },
+    {
+      "name": "overlay",
+      "type": "registry:component",
+      "category": null,
+      "title": "Overlay",
+      "description": "Focus trap, scroll lock and dimming backdrop primitives for modals, sheets and palettes.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/overlay/index.tsx"
+      ]
+    },
+    {
+      "name": "page-curtain",
+      "type": "registry:component",
+      "category": null,
+      "title": "Page curtain",
+      "description": "A slanted clip-wipe page transition that carries the incoming page name across the screen.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/page-curtain/index.tsx"
+      ]
+    },
+    {
+      "name": "parallax-layers",
+      "type": "registry:component",
+      "category": null,
+      "title": "Parallax layers",
+      "description": "Scroll-linked depth layers that move at different speeds as the page scrolls.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/parallax-layers/index.tsx"
+      ]
+    },
+    {
+      "name": "progress-bar",
+      "type": "registry:component",
+      "category": null,
+      "title": "Progress bar",
+      "description": "A horizontal progress fill that reveals on entrance, with optional benchmark ticks.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/progress-bar/index.tsx"
+      ]
+    },
+    {
+      "name": "scramble-reveal",
+      "type": "registry:component",
+      "category": null,
+      "title": "Scramble reveal",
+      "description": "Text that churns through random glyphs on scroll-in, then settles character by character.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/scramble-reveal/index.tsx"
+      ]
+    },
+    {
+      "name": "screenshot-scroll-reveal",
+      "type": "registry:component",
+      "category": null,
+      "title": "Screenshot scroll reveal",
+      "description": "A headline that lifts away while a screenshot tilts upright and scales into centre on scroll.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/screenshot-scroll-reveal/index.tsx"
+      ]
+    },
+    {
+      "name": "scroll-spotlight",
+      "type": "registry:component",
+      "category": null,
+      "title": "Scroll spotlight",
+      "description": "Copy lines that brighten as they cross a reading band, driving a sticky product visual.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/scroll-spotlight/index.tsx"
+      ]
+    },
+    {
+      "name": "scroll-zoom-reveal",
+      "type": "registry:component",
+      "category": null,
+      "title": "Scroll zoom reveal",
+      "description": "A zoomed, tilted screenshot that settles crisp and flat as it scrolls into view.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/scroll-zoom-reveal/index.tsx"
+      ]
+    },
+    {
+      "name": "segmented-toggle",
+      "type": "registry:component",
+      "category": null,
+      "title": "Segmented toggle",
+      "description": "A segmented control whose selection pill slides between options on a snap spring.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/segmented-toggle/index.tsx"
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:component",
+      "category": null,
+      "title": "Sheet",
+      "description": "Motion's bottom-sheet choreography on the native HTML dialog element, with a 50px fade-up entrance plus drag and flick dismissal. Keep SheetBackdrop and SheetPanel as direct Sheet children.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sheet/index.tsx"
+      ]
+    },
+    {
+      "name": "shrink-header",
+      "type": "registry:component",
+      "category": null,
+      "title": "Shrink header",
+      "description": "A fixed header that condenses from full-height and transparent into a compact solid bar on scroll.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/shrink-header/index.tsx"
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:component",
+      "category": null,
+      "title": "Skeleton",
+      "description": "A shimmer placeholder that handoffs to real content with a mask wipe or staggered reveal.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/skeleton/index.tsx"
+      ]
+    },
+    {
+      "name": "smooth-tabs",
+      "type": "registry:component",
+      "category": null,
+      "title": "Smooth tabs",
+      "description": "Tabs whose active pill slides between labels while panels crossfade with a directional blur.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/smooth-tabs/index.tsx"
+      ]
+    },
+    {
+      "name": "sparkline",
+      "type": "registry:component",
+      "category": null,
+      "title": "Sparkline",
+      "description": "A path-drawn micro-chart that draws in on reveal and updates live as values change.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sparkline/index.tsx"
+      ]
+    },
+    {
+      "name": "split-reveal",
+      "type": "registry:component",
+      "category": null,
+      "title": "Split reveal",
+      "description": "Masked text that rises line, word or character at a time from below a clip.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/split-reveal/index.tsx"
+      ]
+    },
+    {
+      "name": "stagger-reveal",
+      "type": "registry:component",
+      "category": null,
+      "title": "Stagger reveal",
+      "description": "An editorial entrance where a headline rises line by line, then followers stagger in behind it.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/stagger-reveal/index.tsx"
+      ]
+    },
+    {
+      "name": "swipe-actions",
+      "type": "registry:component",
+      "category": null,
+      "title": "Swipe actions",
+      "description": "A list row that follows a swipe to reveal actions, and commits on a full flick.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/swipe-actions/index.tsx"
+      ]
+    },
+    {
+      "name": "terminal-session",
+      "type": "registry:component",
+      "category": null,
+      "title": "Terminal session",
+      "description": "A CLI session that types commands in and fades output lines up as each step completes.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/terminal-session/index.tsx"
+      ]
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:component",
+      "category": null,
+      "title": "Tilt card",
+      "description": "A card that leans toward the pointer in 3D, on compositor transforms only.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/tilt-card/index.tsx",
+        "components/motion-ui/arrow-link/index.tsx"
+      ]
+    },
+    {
+      "name": "toast-stack",
+      "type": "registry:component",
+      "category": null,
+      "title": "Toast stack",
+      "description": "Toasts that fan into a scaled pile at the bottom of the screen and settle on a shared spring.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/toast-stack/index.tsx"
+      ]
+    },
+    {
+      "name": "bento-staggered",
+      "type": "registry:block",
+      "category": "bento-grids",
+      "title": "Feature bento",
+      "description": "An example of a staggered feature bento with scroll-triggered reveals and considered hover micro-interactions in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/bento-staggered/index.tsx",
+        "components/motion-ui/sections/bento-staggered/styles.css",
+        "components/motion-ui/tilt-card/index.tsx",
+        "components/motion-ui/animated-number/index.tsx",
+        "components/motion-ui/arrow-link/index.tsx"
+      ]
+    },
+    {
+      "name": "pricing-border-beam",
+      "type": "registry:block",
+      "category": "pricing-sections",
+      "title": "Pricing: Recommended border beam",
+      "description": "An example of a three-tier pricing section that draws attention to the recommended plan with an animated arc of light around its border, in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/pricing-border-beam/index.tsx",
+        "components/motion-ui/sections/pricing-border-beam/styles.css",
+        "components/motion-ui/border-beam/index.tsx"
+      ]
+    },
+    {
+      "name": "button-add-to-basket",
+      "type": "registry:block",
+      "category": "buttons",
+      "title": "Add to basket button",
+      "description": "An example of an add-to-basket button that flies the product into the basket along a curved arc with a spring recoil, in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/button-add-to-basket/index.tsx",
+        "components/motion-ui/sections/button-add-to-basket/styles.css",
+        "components/motion-ui/add-to-basket/index.tsx"
+      ]
+    },
+    {
+      "name": "button-hold-to-confirm",
+      "type": "registry:block",
+      "category": "buttons",
+      "title": "Hold to confirm button",
+      "description": "An example of a hold-to-confirm button with press-and-hold progress feedback in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/button-hold-to-confirm/index.tsx",
+        "components/motion-ui/sections/button-hold-to-confirm/styles.css",
+        "components/motion-ui/hold-to-confirm/index.tsx"
+      ]
+    },
+    {
+      "name": "cta-banner-magnetic",
+      "type": "registry:block",
+      "category": "cta-sections",
+      "title": "CTA: Magnetic button",
+      "description": "An example of a full-bleed conversion banner built around a clamped magnetic pill call-to-action in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/cta-banner-magnetic/index.tsx",
+        "components/motion-ui/sections/cta-banner-magnetic/styles.css",
+        "components/motion-ui/magnetic-pull/index.tsx"
+      ]
+    },
+    {
+      "name": "cta-signup-celebrate",
+      "type": "registry:block",
+      "category": "cta-sections",
+      "title": "CTA: Signup with celebration",
+      "description": "An example of an animated trial-signup call-to-action with idle, loading and success states and an accent-coloured confetti celebration, in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/cta-signup-celebrate/index.tsx",
+        "components/motion-ui/sections/cta-signup-celebrate/styles.css",
+        "components/motion-ui/confetti/index.tsx",
+        "components/motion-ui/multi-state-button/index.tsx"
+      ]
+    },
+    {
+      "name": "faq-plus-minus",
+      "type": "registry:block",
+      "category": "faq-sections",
+      "title": "FAQ: Plus minus",
+      "description": "An example of a chromeless standalone FAQ section with line-divided rows and a plus-to-minus icon morph in Motion for React.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/sections/faq-plus-minus/index.tsx",
+        "components/motion-ui/sections/faq-plus-minus/styles.css",
+        "components/motion-ui/accordion/index.tsx"
+      ]
+    },
+    {
+      "name": "feature-expand",
+      "type": "registry:block",
+      "category": "bento-grids",
+      "title": "Feature expand bento",
+      "description": "An example of a bento grid of feature cards that expand in place into a detail dialog with a shared-element layout animation in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/feature-expand/index.tsx",
+        "components/motion-ui/sections/feature-expand/styles.css",
+        "components/motion-ui/expand-card/index.tsx",
+        "components/motion-ui/overlay/index.tsx"
+      ]
+    },
+    {
+      "name": "footer-newsletter",
+      "type": "registry:block",
+      "category": "footers",
+      "title": "Footer: Newsletter",
+      "description": "An example of an animated site footer with a newsletter subscribe form, quiet link-column hovers and inline state feedback in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/footer-newsletter/index.tsx",
+        "components/motion-ui/sections/footer-newsletter/styles.css",
+        "components/motion-ui/multi-state-button/index.tsx"
+      ]
+    },
+    {
+      "name": "hero-editorial-stagger",
+      "type": "registry:block",
+      "category": "hero-sections",
+      "title": "Editorial stagger hero",
+      "description": "An example of a type-led hero with a masked line-by-line headline reveal and an orchestrated entrance stagger in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/hero-editorial-stagger/index.tsx",
+        "components/motion-ui/sections/hero-editorial-stagger/styles.css",
+        "components/motion-ui/stagger-reveal/index.tsx"
+      ]
+    },
+    {
+      "name": "hero-parallax-layers",
+      "type": "registry:block",
+      "category": "hero-sections",
+      "title": "Hero: Parallax layers",
+      "description": "An example of a full-bleed marketing hero with a three-layer scroll-linked parallax between a background wash, a live product-analytics window and the headline, in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/hero-parallax-layers/index.tsx",
+        "components/motion-ui/sections/hero-parallax-layers/styles.css",
+        "components/motion-ui/sections/hero-parallax-layers/velocity-dashboard-shot.tsx",
+        "components/motion-ui/parallax-layers/index.tsx"
+      ]
+    },
+    {
+      "name": "hero-terminal",
+      "type": "registry:block",
+      "category": "hero-sections",
+      "title": "Terminal hero",
+      "description": "An example of a dev-tool hero with a terminal that types a Velocity CLI session and a copyable install command in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/hero-terminal/index.tsx",
+        "components/motion-ui/sections/hero-terminal/styles.css",
+        "components/motion-ui/copy-button/index.tsx",
+        "components/motion-ui/terminal-session/index.tsx"
+      ]
+    },
+    {
+      "name": "list-notifications-stack",
+      "type": "registry:block",
+      "category": "lists",
+      "title": "Notifications stack",
+      "description": "An example of a notifications stack that expands from grouped cards into a full list in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/list-notifications-stack/index.tsx",
+        "components/motion-ui/list-notifications-stack/styles.css"
+      ]
+    },
+    {
+      "name": "loader-skeleton",
+      "type": "registry:block",
+      "category": "loaders",
+      "title": "Skeleton loader",
+      "description": "An example of skeleton shimmer placeholders that morph into loaded content in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/loader-skeleton/index.tsx",
+        "components/motion-ui/sections/loader-skeleton/styles.css",
+        "components/motion-ui/skeleton/index.tsx"
+      ]
+    },
+    {
+      "name": "logo-ticker",
+      "type": "registry:block",
+      "category": "testimonials",
+      "title": "Logo ticker",
+      "description": "An example of a trusted-by logo ticker with edge fade masks and a gentle slow-on-hover in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/logo-ticker/index.tsx",
+        "components/motion-ui/logo-ticker/styles.css"
+      ]
+    },
+    {
+      "name": "nav-command-palette",
+      "type": "registry:block",
+      "category": "navigation",
+      "title": "Navigation: Command palette",
+      "description": "An example of a Cmd+K command palette with a fuzzy-filtered, keyboard-navigable list and a shared-layout selection highlight in Motion for React.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/sections/nav-command-palette/index.tsx",
+        "components/motion-ui/sections/nav-command-palette/styles.css",
+        "components/motion-ui/command-palette/index.tsx"
+      ]
+    },
+    {
+      "name": "nav-mega-menu",
+      "type": "registry:block",
+      "category": "navigation",
+      "title": "Navigation: Mega menu",
+      "description": "An example of a site navigation with a single shared mega-menu panel that morphs directionally between sections, in Motion for React.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/sections/nav-mega-menu/index.tsx",
+        "components/motion-ui/sections/nav-mega-menu/styles.css",
+        "components/motion-ui/overlay/index.tsx"
+      ]
+    },
+    {
+      "name": "overlay-sheet",
+      "type": "registry:block",
+      "category": "overlays",
+      "title": "Sheet overlay",
+      "description": "An example of a bottom sheet overlay with a springy entrance and drag-to-dismiss in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/overlay-sheet/index.tsx",
+        "components/motion-ui/sections/overlay-sheet/styles.css",
+        "components/motion-ui/sheet/index.tsx"
+      ]
+    },
+    {
+      "name": "page-curtains",
+      "type": "registry:block",
+      "category": "page-transitions",
+      "title": "Page transitions: Curtains",
+      "description": "An example of a curated page-transition demo swapping between fade, wipe, doors and iris curtain effects in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/page-curtains/index.tsx",
+        "components/motion-ui/sections/page-curtains/styles.css",
+        "components/motion-ui/page-curtain/index.tsx"
+      ]
+    },
+    {
+      "name": "page-mask-transitions",
+      "type": "registry:block",
+      "category": "page-transitions",
+      "title": "Page transitions: Mask wipe",
+      "description": "A directional page transition that uses AnimateView and an animated mask image to wipe the incoming view into place without a crossfade. React 19 canary only.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/page-mask-transitions/index.tsx",
+        "components/motion-ui/sections/page-mask-transitions/styles.css",
+        "components/motion-ui/mask-wipe/index.tsx"
+      ]
+    },
+    {
+      "name": "pricing-tiers-morph",
+      "type": "registry:block",
+      "category": "pricing-sections",
+      "title": "Pricing tiers",
+      "description": "An example of an animated pricing section with a monthly to yearly toggle and prices that morph digit by digit in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core",
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/sections/pricing-tiers-morph/index.tsx",
+        "components/motion-ui/sections/pricing-tiers-morph/styles.css",
+        "components/motion-ui/animated-number/index.tsx",
+        "components/motion-ui/segmented-toggle/index.tsx"
+      ]
+    },
+    {
+      "name": "pricing-usage-slider",
+      "type": "registry:block",
+      "category": "pricing-sections",
+      "title": "Usage pricing calculator",
+      "description": "An example of a usage-based pricing calculator with a draggable events slider, live animated prices and tier breakpoints in Motion for React.",
+      "dependencies": [
+        "motion",
+        "@base-ui/react",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": true,
+      "files": [
+        "components/motion-ui/sections/pricing-usage-slider/index.tsx",
+        "components/motion-ui/sections/pricing-usage-slider/styles.css",
+        "components/motion-ui/animated-number/index.tsx"
+      ]
+    },
+    {
+      "name": "stats-counters",
+      "type": "registry:block",
+      "category": "stats-sections",
+      "title": "Stats: Scroll-in counters",
+      "description": "An example of scroll-triggered stat counters with tabular animated figures in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/stats-counters/index.tsx",
+        "components/motion-ui/sections/stats-counters/styles.css",
+        "components/motion-ui/animated-number/index.tsx"
+      ]
+    },
+    {
+      "name": "stats-live-panel",
+      "type": "registry:block",
+      "category": "stats-sections",
+      "title": "Stats: Live engagement panel",
+      "description": "An example of a live engagement dashboard panel with a ticking events-per-minute counter, a trend delta and a path-drawn sparkline in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/stats-live-panel/index.tsx",
+        "components/motion-ui/sections/stats-live-panel/styles.css",
+        "components/motion-ui/animated-number/index.tsx",
+        "components/motion-ui/sparkline/index.tsx"
+      ]
+    },
+    {
+      "name": "testimonials-stack",
+      "type": "registry:block",
+      "category": "testimonials",
+      "title": "Testimonials card stack",
+      "description": "An example of a draggable testimonial card stack that re-fans as you flick the top card away in Motion for React.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": false,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/testimonials-stack/index.tsx",
+        "components/motion-ui/sections/testimonials-stack/styles.css",
+        "components/motion-ui/card-stack/index.tsx",
+        "components/motion-ui/carousel-controls/index.tsx"
+      ]
+    },
+    {
+      "name": "text-split-reveal",
+      "type": "registry:block",
+      "category": "hero-sections",
+      "title": "Hero: Split text reveal",
+      "description": "An example of a type-led product header whose headline and supporting copy reveal word by word through masked split-text animation, in Motion for React.",
+      "dependencies": [
+        "motion",
+        "motion-plus@npm:@motionplus/core"
+      ],
+      "registryDependencies": [
+        "@motion/ui-theme"
+      ],
+      "premium": true,
+      "baseUi": false,
+      "files": [
+        "components/motion-ui/sections/text-split-reveal/index.tsx",
+        "components/motion-ui/sections/text-split-reveal/styles.css",
+        "components/motion-ui/split-reveal/index.tsx"
+      ]
+    }
+  ]
+}
