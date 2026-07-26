@@ -1,17 +1,18 @@
 ---
 name: motion-plus-ui
 description: >-
-  Construir QUALQUER interface web em React puxando primeiro do Motion UI (motion.dev/ui) — o
-  registry shadcn com 26 seções e 35 componentes prontos, animados e auditados — em vez de escrever
-  CSS, posicionar elementos ou inventar componente. Use ao criar ou alterar tela, página, landing,
-  seção, layout, componente de UI, formulário, navegação, modal, tabela, card, botão ou estado
-  vazio/carregando; ao montar projeto novo; ao animar (Motion / motion-plus / framer-motion); ao
-  gerar spring ou easing CSS; ao auditar performance de animação. Cobre a cascata obrigatória
-  (catálogo → instalar → compor → só então código novo), o catálogo completo, o registry `@motion`
-  + npm privado `@motionplus`, os tokens de look & feel (motion.theme.ts + tokens semânticos
-  shadcn), o pacote premium `motion-plus` e o Motion AI Kit (MCP ≥ 6.2.0). NUNCA importe
-  `framer-motion`; NUNCA instale `motion-plus` do npmjs (tombstone 1.5.1); NUNCA escreva CSS de
-  layout antes de consultar o catálogo.
+  CONSTRUIR interface web em React puxando primeiro do Motion UI (motion.dev/ui) — o registry
+  shadcn com 26 seções e 35 componentes prontos, animados e auditados — em vez de escrever CSS,
+  posicionar elementos ou inventar componente. Use ao criar tela, página, landing, seção, layout,
+  componente de UI, formulário, navegação, modal, tabela, card, botão ou estado vazio/carregando;
+  ao montar projeto novo; ao precisar de acordeão, carrossel, command palette, sheet, toast,
+  skeleton, tabs, hero, pricing ou FAQ prontos. Cobre a cascata obrigatória (catálogo → instalar →
+  compor → só então código novo), o catálogo completo, o registry `@motion` + npm privado
+  `@motionplus`, os tokens de look & feel (motion.theme.ts + tokens semânticos shadcn) e o Motion
+  AI Kit (MCP ≥ 6.2.0). Para APENAS ANIMAR uma UI que já existe sem trocar o layout — ou para
+  vanilla JS e Vue — use a skill irmã `motion-plus-animation`. NUNCA importe `framer-motion`;
+  NUNCA instale `motion-plus` do npmjs (tombstone 1.5.1); NUNCA escreva CSS de layout antes de
+  consultar o catálogo.
 license: MIT
 metadata:
   version: "1.0.0"
@@ -31,12 +32,17 @@ metadata:
 
 ## Quando usar
 
-Qualquer tarefa de **interface** em React — criar página/seção/componente, mexer em layout,
-espaçamento, estados, navegação, feedback — e qualquer tarefa de **animação** em web.
+Qualquer tarefa de **construir interface** em React — criar página/seção/componente, mexer em
+layout, espaçamento, estados, navegação, feedback.
 
-**Não serve para:** projeto que não é React (Motion UI é React-only; Vue/vanilla ficam com
-`motion`/`motion-plus` — ver `references/premium-components.md`), backend, ou o app de
-calendário do *usemotion.com* (produto sem relação; ignore qualquer "Motion MCP" que fale de agenda).
+**Use a skill irmã `motion-plus-animation`** quando o pedido for **animar o que já existe** sem
+mexer no layout: adicionar reveal ao rolar, parallax, drag, transição de página, contador, cursor
+custom num markup e design system que já são do projeto. Também é ela que cobre **vanilla JS e
+Vue** — Motion UI é React-only. O discriminador: *criar o que não existe* (aqui) × *animar o que
+existe* (lá).
+
+**Não serve para:** backend, nem o app de calendário do *usemotion.com* (produto sem relação;
+ignore qualquer "Motion MCP" que fale de agenda).
 
 ## O token: pegue do ambiente global, nunca peça nem inline
 
