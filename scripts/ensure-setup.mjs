@@ -37,12 +37,20 @@ import { spawnSync } from 'node:child_process';
 
 const args = process.argv.slice(2);
 if (args.includes('--help') || args.includes('-h')) {
-  console.log('Usage: node ensure-setup.mjs [--check] [--no-init] [--global-only]');
+  console.log('Usage: node ensure-setup.mjs [--check] [--no-init] [--global-only] [--save-token <token>]');
   process.exit(0);
 }
 const CHECK = args.includes('--check') || args.includes('--dry-run');
 const NO_INIT = args.includes('--no-init');
 const GLOBAL_ONLY = args.includes('--global-only');
+// indexOf returns -1 when the flag is absent, and args[0] would then look like a value —
+// gate on the flag actually being present.
+const saveIdx = args.indexOf('--save-token');
+const SAVE_TOKEN = saveIdx === -1 ? null : args[saveIdx + 1];
+if (saveIdx !== -1 && (!SAVE_TOKEN || SAVE_TOKEN.startsWith('-'))) {
+  console.error('✗ --save-token needs the token value.');
+  process.exit(1);
+}
 
 const API = 'https://api.motion.dev';
 const MCP_VERSION = '6.2.0'; // ≥6.2.0 → search-motion-codex serves Motion UI source
@@ -61,17 +69,25 @@ const warn = (m) => { warned++; log('⚠ ' + m); };
 const ok = (m) => log('✓ ' + m);
 const skip = (m) => log('· ' + m);
 
-const token = (process.env.MOTION_API_KEY ?? process.env.MOTION_TOKEN ?? '').trim();
-
-// ── 1. key ───────────────────────────────────────────────────────────────────
+// ── 1. token ─────────────────────────────────────────────────────────────────
+// MOTION_TOKEN is the canonical name (shadcn registry + private npm); MOTION_API_KEY is
+// the name the AI-Kit installer used. Same secret — accept either, prefer the canonical.
 log('— global —');
-if (token) ok('MOTION_API_KEY/MOTION_TOKEN present in environment');
+if (SAVE_TOKEN) saveTokenGlobally(SAVE_TOKEN);
+
+let token = (process.env.MOTION_TOKEN ?? process.env.MOTION_API_KEY ?? '').trim();
+if (!token) token = tokenFromSecrets();
+
+if (token) ok(`Motion token resolved (${process.env.MOTION_TOKEN ? 'MOTION_TOKEN' : process.env.MOTION_API_KEY ? 'MOTION_API_KEY' : '~/.secrets'})`);
 else {
-  warn('no Motion token in the environment — the registry answers 401 without it.');
-  log('  Set it once globally (~/.secrets + the `env` block of ~/.claude/settings.json):');
-  log('    export MOTION_API_KEY=<token de motion.dev/dashboard/tokens>');
-  log('  MOTION_TOKEN is the name the shadcn/npm configs expect; the same value serves both.');
+  warn('no Motion token anywhere — the registry answers 401 without it.');
+  log('  Save it once, globally (never inline it in a project or a command):');
+  log('    node scripts/ensure-setup.mjs --save-token <token>');
+  log('  Get one at https://motion.dev/dashboard/tokens (requires Motion+).');
 }
+// Everything downstream (shadcn add, npm) reads MOTION_TOKEN — export it for the children
+// even when only the legacy name was set.
+if (token) process.env.MOTION_TOKEN = token;
 
 // ── 2. motion MCP at user scope, pinned to 6.2.0 ─────────────────────────────
 // Claude Code's user config moved: the CLI now writes ~/.claude/.claude.json, while
@@ -249,6 +265,61 @@ log(`\n${changed} change(s), ${warned} warning(s).${CHECK ? '  (check mode — n
 process.exit(0);
 
 // ── helpers ──────────────────────────────────────────────────────────────────
+
+/** Last-resort read of ~/.secrets, for when the shell that spawned us never sourced it. */
+function tokenFromSecrets() {
+  try {
+    const s = readFileSync(join(homedir(), '.secrets'), 'utf8');
+    for (const name of ['MOTION_TOKEN', 'MOTION_API_KEY']) {
+      const v = s.match(new RegExp(`^\\s*export\\s+${name}=["']?([^"'\\s$]+)`, 'm'))?.[1];
+      if (v) return v.trim();
+    }
+  } catch { /* no secrets file */ }
+  return '';
+}
+
+/**
+ * Persist the token in the two global places this machine reads it from, so no project
+ * and no command line ever carries the value:
+ *   ~/.secrets                 — sourced by ~/.zshenv, so every shell gets it
+ *   ~/.claude/settings.json    — the `env` block, so every Claude Code session gets it
+ * MOTION_TOKEN is derived from MOTION_API_KEY in ~/.secrets (one value, one place to rotate);
+ * settings.json takes the literal because that block does no shell expansion.
+ */
+function saveTokenGlobally(value) {
+  if (CHECK) { warn('--save-token ignored in --check mode'); return; }
+  const secretsPath = join(homedir(), '.secrets');
+  let s = existsSync(secretsPath) ? readFileSync(secretsPath, 'utf8') : '';
+  if (!/^\s*export\s+MOTION_API_KEY=/m.test(s)) {
+    s += `${s && !s.endsWith('\n') ? '\n' : ''}export MOTION_API_KEY=${value}\n`;
+    did('~/.secrets → MOTION_API_KEY');
+  } else if (!s.includes(value)) {
+    s = s.replace(/^(\s*export\s+MOTION_API_KEY=).*$/m, `$1${value}`);
+    did('~/.secrets → MOTION_API_KEY updated (rotated)');
+  }
+  if (!/^\s*export\s+MOTION_TOKEN=/m.test(s)) {
+    s = s.replace(/^(\s*export\s+MOTION_API_KEY=.*)$/m,
+      '$1\n# Nome canônico esperado por shadcn/npm/registry da Motion — mesmo segredo.\nexport MOTION_TOKEN="$MOTION_API_KEY"');
+    did('~/.secrets → MOTION_TOKEN="$MOTION_API_KEY"');
+  }
+  writeFileSync(secretsPath, s, { mode: 0o600 });
+
+  const settingsPath = join(homedir(), '.claude', 'settings.json');
+  const settings = readJson(settingsPath);
+  if (!settings) { warn('~/.claude/settings.json unreadable — skipped (the ~/.secrets copy still works)'); }
+  else {
+    const env = settings.env ?? (settings.env = {});
+    if (env.MOTION_TOKEN !== value || env.MOTION_API_KEY !== value) {
+      env.MOTION_API_KEY = value;
+      env.MOTION_TOKEN = value;
+      settings.env = Object.fromEntries(Object.entries(env).sort(([a], [b]) => a.localeCompare(b)));
+      writeFileSync(settingsPath, JSON.stringify(settings, null, 2) + '\n');
+      did('~/.claude/settings.json → env.MOTION_TOKEN + env.MOTION_API_KEY');
+    }
+  }
+  process.env.MOTION_TOKEN = process.env.MOTION_API_KEY = value;
+  log('  Run `source ~/.secrets` in the current shell; new sessions pick it up automatically.');
+}
 
 /**
  * Install and wire Tailwind v4 so `shadcn init` has something to validate.

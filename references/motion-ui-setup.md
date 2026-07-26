@@ -3,25 +3,38 @@
 > Caminho rápido: `node scripts/ensure-setup.mjs` faz tudo isto, idempotente, com `--check`
 > para ver antes. O que segue são as internas — e o manual quando algo falha.
 
-## O token: um segredo, dois nomes
+## O token: um segredo, dois nomes, sempre global
 
-O nome **canônico** em toda a documentação da Motion é **`MOTION_TOKEN`**. Nesta máquina o mesmo
-segredo está exportado como **`MOTION_API_KEY`** (`~/.secrets` + bloco `env` de
-`~/.claude/settings.json`) — herança do instalador do AI Kit. **É o mesmo valor**: verificado contra
+O nome **canônico** em toda a documentação da Motion é **`MOTION_TOKEN`**; `MOTION_API_KEY` é o nome
+herdado do instalador do AI Kit. **É o mesmo valor** — verificado contra
 `https://api.motion.dev/ui/registry/accordion.json`, que responde `200` com
 `Authorization: Bearer <valor>` e `401` sem.
 
-Cuidado com a homonímia: existe um `MOTION_API_KEY` do **usemotion.com** (app de calendário/tarefas),
-sem relação com animação. Se um dia as duas coisas coexistirem nesta máquina, renomeie — o Motion UI
-quer `MOTION_TOKEN`.
+Nesta máquina os dois já estão salvos globalmente:
 
-Regra prática:
+| Onde | O quê | Serve para |
+|---|---|---|
+| `~/.secrets` | `export MOTION_API_KEY=…` + `export MOTION_TOKEN="$MOTION_API_KEY"` | todo shell (via `~/.zshenv`) |
+| `~/.claude/settings.json` → `env` | `MOTION_API_KEY` e `MOTION_TOKEN` (literais) | toda sessão do Claude Code |
+
+`MOTION_TOKEN` deriva de `MOTION_API_KEY` no `~/.secrets`: **rotacionar é mudar um valor só** ali
+(e o literal do `settings.json`, que não faz expansão de shell).
+
+**Resolução, na ordem:** `$MOTION_TOKEN` → `$MOTION_API_KEY` → `~/.secrets` / `settings.json`.
+Não achou em nenhum? Ele ainda não foi salvo — salve **globalmente** antes de qualquer coisa:
 
 ```bash
-export MOTION_TOKEN="$MOTION_API_KEY"   # antes de qualquer npm/pnpm/shadcn
+node scripts/ensure-setup.mjs --save-token <token>   # grava em ~/.secrets + settings.json
+source ~/.secrets                                     # para a sessão atual
 ```
 
-Gerar/rotacionar em `https://motion.dev/dashboard/tokens` (precisa de Motion+).
+Gerar/rotacionar em `https://motion.dev/dashboard/tokens` (precisa de Motion+). **Nunca** peça o
+valor ao usuário se ele já está no ambiente, nunca escreva o valor num arquivo de projeto, nunca
+passe inline num comando que fica no histórico do shell.
+
+Cuidado com a homonímia: existe um `MOTION_API_KEY` do **usemotion.com** (app de calendário/tarefas),
+sem relação com animação. Se as duas coisas coexistirem nesta máquina, renomeie — o Motion UI quer
+`MOTION_TOKEN`.
 
 ## 1. `components.json` — o registry `@motion`
 

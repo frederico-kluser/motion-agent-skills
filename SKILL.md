@@ -38,6 +38,30 @@ espaçamento, estados, navegação, feedback — e qualquer tarefa de **animaç�
 `motion`/`motion-plus` — ver `references/premium-components.md`), backend, ou o app de
 calendário do *usemotion.com* (produto sem relação; ignore qualquer "Motion MCP" que fale de agenda).
 
+## O token: pegue do ambiente global, nunca peça nem inline
+
+O Motion+ token é **um segredo só**, guardado globalmente. **Nunca** peça ao usuário, nunca escreva
+o valor num arquivo do projeto, nunca cole numa linha de comando que fique no histórico.
+
+Ordem de resolução — pare no primeiro que responder:
+
+1. `$MOTION_TOKEN` no ambiente (nome canônico da Motion).
+2. `$MOTION_API_KEY` no ambiente (nome herdado do instalador do AI Kit — **mesmo valor**).
+3. `~/.secrets` (`source ~/.secrets` e tente de novo) e o bloco `env` de `~/.claude/settings.json`.
+
+**Não achou em nenhum?** Então ele ainda não está salvo — salve primeiro, e só depois siga:
+
+```bash
+node ~/.claude/skills/motion-plus-ui/scripts/ensure-setup.mjs --save-token <token>
+```
+
+Isso grava em `~/.secrets` e no `env` do `~/.claude/settings.json`, deixando o valor disponível para
+toda sessão e todo projeto. Gerar/rotacionar em <https://motion.dev/dashboard/tokens> (exige Motion+).
+Depois de salvar, `source ~/.secrets` na sessão atual.
+
+Dentro de um projeto, o que fica no disco é **só o placeholder** `${MOTION_TOKEN}` — em
+`components.json` e `.npmrc`, ambos seguros de commitar.
+
 ## Setup — rode primeiro (idempotente)
 
 ```bash
@@ -104,8 +128,10 @@ catálogo e por quê. Sem essa linha, o passo 4 não aconteceu — volte ao pass
    sobrescreve o `motion.theme.ts`.
 6. **Edite em wrapper, nunca no source instalado.** Não há version pin: o CLI é dono dos arquivos em
    `components/motion-ui/**` e sobrescreve a cada `add`.
-7. **O token nunca entra no repo.** Só os placeholders `${MOTION_TOKEN}` / `${MOTION_API_KEY}`.
-   `components.json` e `.npmrc` são seguros de commitar justamente por isso.
+7. **O token nunca entra no repo, nem no chat.** Resolva do ambiente global (ver acima); no projeto
+   só existem os placeholders `${MOTION_TOKEN}` / `${MOTION_API_KEY}` — é por isso que
+   `components.json` e `.npmrc` são seguros de commitar. Se faltar, salve globalmente com
+   `--save-token`; nunca peça o valor ao usuário nem o passe inline num comando.
 8. **Anime só `transform`, `opacity`, `filter`.** Nada de `top`/`left`/`width`/`height`/`margin` —
    para mudança de caixa, use o prop `layout`.
 9. **Monte `<MotionUIThemeProvider>` uma vez** na raiz, senão tudo cai nos defaults.
