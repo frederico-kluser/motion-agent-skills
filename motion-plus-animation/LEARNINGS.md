@@ -29,3 +29,21 @@
   marcava `AnimateView`/`AnimateActivity` como premium — são core desde `motion@12.41.0`
   (2026-06-23). Lição: lista de nomes de API vinda de memória do modelo apodrece; toda lista aqui
   tem que sair do `llms.txt`, do MCP ou de uma URL que responde 200.
+
+- [2026-08-17] [source: verified] [task: animar deck reveal.js] `animate(el, { y: 0 })` do
+  `animate` imperativo **não roda** quando o `y` atual do elemento veio de um `transform` inline:
+  o Motion lê o valor de partida do computed style e de um `matrix(…)` não consegue extrair `y`,
+  então assume 0, a animação vira 0 → 0 e nada acontece — sem erro, sem warning, sem WAAPI
+  (`el.getAnimations().length === 0`). É por isso que o exemplo oficial `split-text` usa
+  `{ opacity: [0, 1], y: [10, 0] }`: a forma `[de, até]` não depende de ler o DOM. Regra:
+  **no `animate` imperativo sobre transform, sempre declare os dois extremos.**
+  Corolário do mesmo caso: `animate(..., { duration: 0 })` não escreve nada — para pôr o elemento
+  no estado de partida, escreva `el.style.transform` na mão.
+
+- [2026-08-17] [source: verified] [task: animar deck reveal.js] Correção parcial do aprendizado de
+  2026-07-26: `AnimateText` **existe** e é exportado por `motion-plus/react@2.12.0` (visto no
+  `dist/react-entry.d.ts`), mas continua fora da documentação e o MCP não o conhece. Na prática é
+  inutilizável quando o disparo vem de fora: ele renderiza um `motion.create(React.Fragment)` e
+  as variants das letras não recebem o label propagado por um `motion.span` pai — as letras ficam
+  com `transform: none`. Além disso `AnimateTextProps` não declara `transition`/`initial`/`animate`
+  embora o `...props` os repasse, então TypeScript reclama. Use `splitText`.
