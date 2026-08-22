@@ -1,4 +1,4 @@
-# Motion Agent Skills
+# Motion Agent Skill
 
 Duas [Agent Skills](https://code.claude.com/docs/en/skills) que ensinam um agente de código a usar
 [Motion](https://motion.dev) de verdade — em vez de escrever CSS na mão e chutar API de animação a
@@ -30,8 +30,8 @@ Nenhum código da Motion está neste repositório — as skills sabem **onde bus
 ## Instalação
 
 ```bash
-git clone https://github.com/frederico-kluser/motion-agent-skills.git
-cd motion-agent-skills
+git clone https://github.com/frederico-kluser/motion-agent-skill.git
+cd motion-agent-skill
 ./install.sh
 ```
 
